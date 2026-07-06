@@ -6,6 +6,7 @@ import {
   barStyle,
   formatAxisYear,
   isPolityActive,
+  getFocusYearForPolity,
   localized,
   percentToYear,
   rulerSegmentStyle,
@@ -50,8 +51,12 @@ function onTrackClick(e) {
 
 function onLaneClick(polity, e) {
   e.stopPropagation()
-  const mid = Math.round((polity.start + polity.end) / 2)
-  emit('select-year', mid)
+  emit('select-year', getFocusYearForPolity(polity, props.currentYear))
+}
+
+function onRulerClick(ruler, e) {
+  e.stopPropagation()
+  emit('select-year', Math.round((ruler.start + ruler.end) / 2))
 }
 
 function laneTooltip(polity) {
@@ -121,6 +126,7 @@ function laneTooltip(polity) {
             class="ruler-marker"
             :style="{ ...rulerSegmentStyle(ruler, range), borderColor: polity.color }"
             :title="localized(ruler.name, locale)"
+            @click.stop="onRulerClick(ruler, $event)"
           />
         </div>
       </div>
@@ -308,7 +314,7 @@ function laneTooltip(polity) {
   border: 2px solid;
   border-radius: 3px;
   z-index: 3;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .slider-row {

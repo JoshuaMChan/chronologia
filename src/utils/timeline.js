@@ -70,6 +70,30 @@ export function getPolityRulerAtYear(polity, year) {
   )
 }
 
+export function getFocusYearForPolity(polity, currentYear) {
+  const rulers = polity.rulers ?? []
+  if (rulers.length === 0) {
+    return Math.round((polity.start + polity.end) / 2)
+  }
+
+  const active = getPolityRulerAtYear(polity, currentYear)
+  if (active) {
+    return Math.round((active.start + active.end) / 2)
+  }
+
+  let nearest = rulers[0]
+  let nearestDist = Infinity
+  for (const ruler of rulers) {
+    const mid = (ruler.start + ruler.end) / 2
+    const dist = Math.abs(currentYear - mid)
+    if (dist < nearestDist) {
+      nearestDist = dist
+      nearest = ruler
+    }
+  }
+  return Math.round((nearest.start + nearest.end) / 2)
+}
+
 export function isPolityActive(polity, year) {
   return year >= polity.start && year <= polity.end
 }

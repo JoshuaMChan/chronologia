@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import {
   formatYear,
+  getFocusYearForPolity,
   getPolityRulerAtYear,
   localized,
   localizedContemporary,
@@ -13,12 +14,18 @@ const props = defineProps({
   year: { type: Number, required: true },
 })
 
+const emit = defineEmits(['focus-polity'])
+
 const { locale, t } = useI18n()
 
 const yearLabel = computed(() => formatYear(props.year, locale.value))
 
 function rulerFor(polity) {
   return getPolityRulerAtYear(polity, props.year)
+}
+
+function onPolityClick(polity) {
+  emit('focus-polity', polity)
 }
 </script>
 
@@ -40,7 +47,12 @@ function rulerFor(polity) {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="polity in polities" :key="polity.id">
+          <tr
+            v-for="polity in polities"
+            :key="polity.id"
+            class="polity-row"
+            @click="onPolityClick(polity)"
+          >
             <td>
               <div class="col-polity">
                 <span class="color-bar" :style="{ background: polity.color }" />
@@ -112,6 +124,15 @@ function rulerFor(polity) {
 
 .polity-table tbody tr:last-child td {
   border-bottom: none;
+}
+
+.polity-row {
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.polity-row:hover {
+  background: rgba(124, 74, 46, 0.04);
 }
 
 .col-polity {

@@ -8,6 +8,7 @@ import anatolia from './data/regions/anatolia.json'
 import {
   formatYear,
   getActivePolities,
+  getFocusYearForPolity,
   localized,
 } from './utils/timeline'
 
@@ -27,6 +28,10 @@ function selectYear(year) {
     region.range.start,
     Math.min(region.range.end, year)
   )
+}
+
+function focusPolity(polity) {
+  selectYear(getFocusYearForPolity(polity, currentYear.value))
 }
 </script>
 
@@ -55,7 +60,11 @@ function selectYear(year) {
         />
       </section>
 
-      <PolityTable :polities="activePolities" :year="currentYear" />
+      <PolityTable
+        :polities="activePolities"
+        :year="currentYear"
+        @focus-polity="focusPolity"
+      />
     </main>
 
     <footer class="footer">
