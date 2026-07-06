@@ -38,18 +38,54 @@ export function percentToYear(percent, rangeStart, rangeEnd) {
   return Math.round(rangeStart + (percent / 100) * (rangeEnd - rangeStart))
 }
 
-export function getActivePeriods(periods, year) {
-  return periods.filter((p) => year >= p.start && year <= p.end)
+export function getActivePolities(polities, year) {
+  return polities.filter((p) => year >= p.start && year <= p.end)
 }
 
-export function getActiveRulers(periods, year) {
+export function getActiveRulers(polities, year) {
   const results = []
-  for (const period of periods) {
-    for (const ruler of period.rulers) {
+  for (const polity of polities) {
+    for (const ruler of polity.rulers ?? []) {
       if (year >= ruler.start && year <= ruler.end) {
-        results.push({ period, ruler })
+        results.push({ polity, ruler })
       }
     }
   }
   return results
+}
+
+export function isPolityActive(polity, year) {
+  return year >= polity.start && year <= polity.end
+}
+
+export function barStyle(polity, range) {
+  const left = yearToPercent(polity.start, range.start, range.end)
+  const right = yearToPercent(polity.end, range.start, range.end)
+  return {
+    left: `${left}%`,
+    width: `${Math.max(right - left, 0.4)}%`,
+    '--bar-color': polity.color,
+  }
+}
+
+export function rulerSegmentStyle(ruler, range) {
+  const left = yearToPercent(ruler.start, range.start, range.end)
+  const right = yearToPercent(ruler.end, range.start, range.end)
+  return {
+    left: `${left}%`,
+    width: `${Math.max(right - left, 0.3)}%`,
+  }
+}
+
+export function axisTicks(range, step = 500) {
+  const ticks = []
+  const first = Math.ceil(range.start / step) * step
+  for (let y = first; y <= range.end; y += step) {
+    ticks.push(y)
+  }
+  return ticks
+}
+
+export function formatAxisYear(year) {
+  return year < 0 ? Math.abs(year) : year
 }

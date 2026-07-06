@@ -6,7 +6,7 @@
     "zh": "小亚细亚"
   },
   "range": { "start": -1800, "end": 1500 },
-  "periods": [
+  "polities": [
     {
       "id": "hittite",
       "start": -1800,
@@ -26,11 +26,6 @@
             "en": "Suppiluliuma I",
             "ja": "シュッピルリウマ1世",
             "zh": "苏皮卢利乌玛一世"
-          },
-          "note": {
-            "en": "14th century BCE",
-            "ja": "紀元前14世紀",
-            "zh": "公元前14世纪"
           }
         }
       ],
@@ -41,13 +36,25 @@
       }
     },
     {
-      "id": "phrygia-lydia",
+      "id": "phrygia",
       "start": -1200,
+      "end": -676,
+      "name": {
+        "en": "Phrygia",
+        "ja": "フリギア",
+        "zh": "弗里吉亚"
+      },
+      "color": "#b8860b",
+      "rulers": []
+    },
+    {
+      "id": "lydia",
+      "start": -680,
       "end": -546,
       "name": {
-        "en": "Phrygia / Lydia",
-        "ja": "フリギア / リディア王国",
-        "zh": "弗里吉亚 / 吕底亚王国"
+        "en": "Lydia",
+        "ja": "リディア王国",
+        "zh": "吕底亚王国"
       },
       "color": "#c9a227",
       "rulers": []
@@ -59,7 +66,7 @@
       "name": {
         "en": "Achaemenid Persian Empire",
         "ja": "アケメネス朝ペルシャ帝国",
-        "zh": "阿契美尼德波斯帝国（第一波斯帝国）"
+        "zh": "阿契美尼德波斯帝国"
       },
       "color": "#4a6741",
       "rulers": [
@@ -71,11 +78,6 @@
             "en": "Cyrus the Great",
             "ja": "キュロス大王",
             "zh": "居鲁士大帝"
-          },
-          "note": {
-            "en": "6th century BCE",
-            "ja": "紀元前6世紀",
-            "zh": "公元前6世纪"
           }
         }
       ]
@@ -99,35 +101,42 @@
             "en": "Alexander the Great",
             "ja": "アレクサンドロス大王",
             "zh": "亚历山大大帝"
-          },
-          "note": {
-            "en": "4th century BCE",
-            "ja": "紀元前4世紀",
-            "zh": "公元前4世纪"
           }
         }
       ]
     },
     {
-      "id": "seleucid-pergamon",
+      "id": "seleucid",
       "start": -323,
       "end": -133,
       "name": {
-        "en": "Seleucid Empire / Pergamon",
-        "ja": "セレウコス帝国 / ペルガモン王国",
-        "zh": "塞琉古帝国 / 帕加马王国"
+        "en": "Seleucid Empire",
+        "ja": "セレウコス帝国",
+        "zh": "塞琉古帝国"
       },
       "color": "#6b4c8a",
       "rulers": []
     },
     {
-      "id": "pontus-rome",
-      "start": -133,
-      "end": 395,
+      "id": "pergamon",
+      "start": -282,
+      "end": -133,
       "name": {
-        "en": "Kingdom of Pontus / Roman Republic & Empire",
-        "ja": "ポントス王国 / ローマ共和国・帝国",
-        "zh": "本都王国 / 罗马共和国及帝国"
+        "en": "Pergamon Kingdom",
+        "ja": "ペルガモン王国",
+        "zh": "帕加马王国"
+      },
+      "color": "#9b59b6",
+      "rulers": []
+    },
+    {
+      "id": "pontus",
+      "start": -302,
+      "end": -63,
+      "name": {
+        "en": "Kingdom of Pontus",
+        "ja": "ポントス王国",
+        "zh": "本都王国"
       },
       "color": "#8b2942",
       "rulers": [
@@ -139,14 +148,21 @@
             "en": "Mithridates VI",
             "ja": "ミトリダテス6世",
             "zh": "米特里达梯六世"
-          },
-          "note": {
-            "en": "1st century BCE",
-            "ja": "紀元前1世紀",
-            "zh": "公元前1世纪"
           }
         }
       ]
+    },
+    {
+      "id": "rome",
+      "start": -133,
+      "end": 395,
+      "name": {
+        "en": "Roman Republic & Empire",
+        "ja": "ローマ共和国・帝国",
+        "zh": "罗马共和国及帝国"
+      },
+      "color": "#a83232",
+      "rulers": []
     },
     {
       "id": "byzantine",
@@ -167,11 +183,6 @@
             "en": "Justinian the Great",
             "ja": "ユスティニアヌス大帝",
             "zh": "查士丁尼大帝"
-          },
-          "note": {
-            "en": "6th century CE",
-            "ja": "6世紀",
-            "zh": "公元6世纪"
           }
         }
       ]
