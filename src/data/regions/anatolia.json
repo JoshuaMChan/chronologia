@@ -1,0 +1,180 @@
+{
+  "id": "anatolia",
+  "name": {
+    "en": "Anatolia",
+    "ja": "アナトリア",
+    "zh": "小亚细亚"
+  },
+  "range": { "start": -1800, "end": 1500 },
+  "periods": [
+    {
+      "id": "hittite",
+      "start": -1800,
+      "end": -1180,
+      "name": {
+        "en": "Hittite Empire",
+        "ja": "ヒッタイト帝国",
+        "zh": "赫梯帝国"
+      },
+      "color": "#8b4513",
+      "rulers": [
+        {
+          "id": "suppiluliuma-i",
+          "start": -1344,
+          "end": -1322,
+          "name": {
+            "en": "Suppiluliuma I",
+            "ja": "シュッピルリウマ1世",
+            "zh": "苏皮卢利乌玛一世"
+          },
+          "note": {
+            "en": "14th century BCE",
+            "ja": "紀元前14世紀",
+            "zh": "公元前14世纪"
+          }
+        }
+      ],
+      "contemporary": {
+        "en": "Shang dynasty (China)",
+        "ja": "殷（商）王朝",
+        "zh": "商朝"
+      }
+    },
+    {
+      "id": "phrygia-lydia",
+      "start": -1200,
+      "end": -546,
+      "name": {
+        "en": "Phrygia / Lydia",
+        "ja": "フリギア / リディア王国",
+        "zh": "弗里吉亚 / 吕底亚王国"
+      },
+      "color": "#c9a227",
+      "rulers": []
+    },
+    {
+      "id": "achaemenid",
+      "start": -550,
+      "end": -330,
+      "name": {
+        "en": "Achaemenid Persian Empire",
+        "ja": "アケメネス朝ペルシャ帝国",
+        "zh": "阿契美尼德波斯帝国（第一波斯帝国）"
+      },
+      "color": "#4a6741",
+      "rulers": [
+        {
+          "id": "cyrus-the-great",
+          "start": -559,
+          "end": -530,
+          "name": {
+            "en": "Cyrus the Great",
+            "ja": "キュロス大王",
+            "zh": "居鲁士大帝"
+          },
+          "note": {
+            "en": "6th century BCE",
+            "ja": "紀元前6世紀",
+            "zh": "公元前6世纪"
+          }
+        }
+      ]
+    },
+    {
+      "id": "macedonian",
+      "start": -334,
+      "end": -323,
+      "name": {
+        "en": "Macedonian Empire",
+        "ja": "マケドニア帝国",
+        "zh": "马其顿帝国"
+      },
+      "color": "#2c5f7c",
+      "rulers": [
+        {
+          "id": "alexander-the-great",
+          "start": -336,
+          "end": -323,
+          "name": {
+            "en": "Alexander the Great",
+            "ja": "アレクサンドロス大王",
+            "zh": "亚历山大大帝"
+          },
+          "note": {
+            "en": "4th century BCE",
+            "ja": "紀元前4世紀",
+            "zh": "公元前4世纪"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seleucid-pergamon",
+      "start": -323,
+      "end": -133,
+      "name": {
+        "en": "Seleucid Empire / Pergamon",
+        "ja": "セレウコス帝国 / ペルガモン王国",
+        "zh": "塞琉古帝国 / 帕加马王国"
+      },
+      "color": "#6b4c8a",
+      "rulers": []
+    },
+    {
+      "id": "pontus-rome",
+      "start": -133,
+      "end": 395,
+      "name": {
+        "en": "Kingdom of Pontus / Roman Republic & Empire",
+        "ja": "ポントス王国 / ローマ共和国・帝国",
+        "zh": "本都王国 / 罗马共和国及帝国"
+      },
+      "color": "#8b2942",
+      "rulers": [
+        {
+          "id": "mithridates-vi",
+          "start": -120,
+          "end": -63,
+          "name": {
+            "en": "Mithridates VI",
+            "ja": "ミトリダテス6世",
+            "zh": "米特里达梯六世"
+          },
+          "note": {
+            "en": "1st century BCE",
+            "ja": "紀元前1世紀",
+            "zh": "公元前1世纪"
+          }
+        }
+      ]
+    },
+    {
+      "id": "byzantine",
+      "start": 395,
+      "end": 1453,
+      "name": {
+        "en": "Byzantine Empire",
+        "ja": "ビザンツ帝国",
+        "zh": "拜占庭帝国"
+      },
+      "color": "#7c4a2e",
+      "rulers": [
+        {
+          "id": "justinian",
+          "start": 527,
+          "end": 565,
+          "name": {
+            "en": "Justinian the Great",
+            "ja": "ユスティニアヌス大帝",
+            "zh": "查士丁尼大帝"
+          },
+          "note": {
+            "en": "6th century CE",
+            "ja": "6世紀",
+            "zh": "公元6世纪"
+          }
+        }
+      ]
+    }
+  ]
+}

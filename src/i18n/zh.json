@@ -1,0 +1,23 @@
+{
+  "site": {
+    "title": "Chronologia",
+    "subtitle": "诸文明与君主的平行纪年"
+  },
+  "region": {
+    "anatolia": "小亚细亚"
+  },
+  "timeline": {
+    "bce": "公元前",
+    "ce": "公元",
+    "year": "年份",
+    "period": "文明",
+    "ruler": "君主",
+    "contemporary": "同期",
+    "reign": "在位",
+    "noRuler": "暂无君主记录",
+    "dragHint": "拖动滑块或点击时间轴进行探索"
+  },
+  "legend": {
+    "title": "文明一览"
+  }
+}

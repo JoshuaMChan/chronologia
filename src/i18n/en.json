@@ -1,0 +1,23 @@
+{
+  "site": {
+    "title": "Chronologia",
+    "subtitle": "Parallel timelines of rulers & civilizations"
+  },
+  "region": {
+    "anatolia": "Anatolia"
+  },
+  "timeline": {
+    "bce": "BCE",
+    "ce": "CE",
+    "year": "Year",
+    "period": "Civilization",
+    "ruler": "Ruler",
+    "contemporary": "Contemporary",
+    "reign": "Reign",
+    "noRuler": "No ruler recorded yet",
+    "dragHint": "Drag the slider or click the timeline to explore"
+  },
+  "legend": {
+    "title": "Civilizations"
+  }
+}

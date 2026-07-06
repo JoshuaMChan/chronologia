@@ -1,0 +1,23 @@
+{
+  "site": {
+    "title": "Chronologia",
+    "subtitle": "文明と君主の並行年表"
+  },
+  "region": {
+    "anatolia": "アナトリア"
+  },
+  "timeline": {
+    "bce": "紀元前",
+    "ce": "紀元",
+    "year": "年",
+    "period": "文明",
+    "ruler": "君主",
+    "contemporary": "同時代",
+    "reign": "在位",
+    "noRuler": "君主データ未登録",
+    "dragHint": "スライダーまたは年表をクリックして探索"
+  },
+  "legend": {
+    "title": "文明一覧"
+  }
+}
