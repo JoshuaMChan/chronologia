@@ -63,6 +63,13 @@ export function getActiveRulers(polities, year) {
   return results
 }
 
+export function getPolityRulerAtYear(polity, year) {
+  return (
+    polity.rulers?.find((ruler) => year >= ruler.start && year <= ruler.end) ??
+    null
+  )
+}
+
 export function isPolityActive(polity, year) {
   return year >= polity.start && year <= polity.end
 }

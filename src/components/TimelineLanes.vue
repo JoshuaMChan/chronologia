@@ -7,6 +7,7 @@ import {
   formatAxisYear,
   isPolityActive,
   localized,
+  percentToYear,
   rulerSegmentStyle,
   yearToPercent,
 } from '../utils/timeline'
@@ -26,6 +27,17 @@ const ticks = computed(() => axisTicks(props.range))
 const playheadLeft = computed(() =>
   yearToPercent(props.currentYear, props.range.start, props.range.end)
 )
+
+const sliderPercent = computed({
+  get: () =>
+    yearToPercent(props.currentYear, props.range.start, props.range.end),
+  set: (val) => {
+    emit(
+      'select-year',
+      percentToYear(val, props.range.start, props.range.end)
+    )
+  },
+})
 
 function onTrackClick(e) {
   const rect = e.currentTarget.getBoundingClientRect()
@@ -113,6 +125,21 @@ function laneTooltip(polity) {
         </div>
       </div>
     </div>
+
+    <div class="slider-row">
+      <div class="label-col" />
+      <div class="track-col">
+        <input
+          v-model.number="sliderPercent"
+          type="range"
+          class="year-slider"
+          min="0"
+          max="100"
+          step="0.1"
+          :aria-label="localized({ en: 'Year', ja: '年', zh: '年份' }, locale)"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -123,7 +150,8 @@ function laneTooltip(polity) {
 }
 
 .time-header,
-.lane {
+.lane,
+.slider-row {
   display: grid;
   grid-template-columns: var(--label-width) 1fr;
   align-items: center;
@@ -281,6 +309,19 @@ function laneTooltip(polity) {
   border-radius: 3px;
   z-index: 3;
   pointer-events: none;
+}
+
+.slider-row {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border);
+}
+
+.year-slider {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {
