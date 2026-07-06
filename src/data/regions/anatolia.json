@@ -357,11 +357,18 @@
           }
         }
       ],
-      "contemporary": {
-        "en": "Song dynasty",
-        "ja": "宋",
-        "zh": "宋朝"
-      }
+      "contemporary": [
+        {
+          "en": "Tang dynasty",
+          "ja": "唐",
+          "zh": "唐朝"
+        },
+        {
+          "en": "Song dynasty",
+          "ja": "宋",
+          "zh": "宋朝"
+        }
+      ]
     }
   ]
 }

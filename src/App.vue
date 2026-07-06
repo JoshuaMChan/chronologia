@@ -10,21 +10,12 @@ import {
   getActivePolities,
   getActiveRulers,
   localized,
-  percentToYear,
-  yearToPercent,
 } from './utils/timeline'
 
 const { locale, t } = useI18n()
 
 const region = anatolia
 const currentYear = ref(-120)
-
-const sliderPercent = computed({
-  get: () => yearToPercent(currentYear.value, region.range.start, region.range.end),
-  set: (val) => {
-    currentYear.value = percentToYear(val, region.range.start, region.range.end)
-  },
-})
 
 const activePolities = computed(() =>
   getActivePolities(region.polities, currentYear.value)
@@ -47,10 +38,7 @@ function selectYear(year) {
 <template>
   <div class="app">
     <header class="header">
-      <div class="header-text">
-        <h1 class="site-title">{{ t('site.title') }}</h1>
-        <p class="site-subtitle">{{ t('site.subtitle') }}</p>
-      </div>
+      <h1 class="site-title">{{ t('site.title') }}</h1>
       <LangSwitcher />
     </header>
 
@@ -70,55 +58,47 @@ function selectYear(year) {
           :current-year="currentYear"
           @select-year="selectYear"
         />
-
-        <input
-          v-model.number="sliderPercent"
-          type="range"
-          class="year-slider"
-          min="0"
-          max="100"
-          step="0.1"
-        />
-        <p class="hint">{{ t('timeline.dragHint') }}</p>
       </section>
 
-      <section v-if="activePolities.length" class="active-section">
-        <h3 class="section-title">
-          {{ t('timeline.activeAt', { year: formatYear(currentYear, locale) }) }}
-        </h3>
-        <div class="active-chips">
-          <span
-            v-for="polity in activePolities"
-            :key="polity.id"
-            class="chip"
-            :style="{ borderColor: polity.color, color: polity.color }"
-          >
-            {{ localized(polity.name, locale) }}
-          </span>
-        </div>
-      </section>
+      <div class="detail-row" :class="{ parallel: activePolities.length }">
+        <section v-if="activePolities.length" class="active-section">
+          <h3 class="section-title">
+            {{ t('timeline.activeAt', { year: formatYear(currentYear, locale) }) }}
+          </h3>
+          <div class="active-chips">
+            <span
+              v-for="polity in activePolities"
+              :key="polity.id"
+              class="chip"
+              :style="{ borderColor: polity.color, color: polity.color }"
+            >
+              {{ localized(polity.name, locale) }}
+            </span>
+          </div>
+        </section>
 
-      <section class="cards-section">
-        <h3 class="section-title">{{ t('timeline.ruler') }}</h3>
-        <div v-if="activeRulers.length" class="cards-grid">
-          <RulerCard
-            v-for="{ polity, ruler } in activeRulers"
-            :key="ruler.id"
-            :polity="polity"
-            :ruler="ruler"
-            :is-active="true"
-          />
-        </div>
-        <div v-else-if="activePolities.length" class="cards-grid">
-          <RulerCard
-            v-for="polity in activePolities"
-            :key="polity.id"
-            :polity="polity"
-            :is-active="true"
-          />
-        </div>
-        <p v-else class="empty-state">{{ t('timeline.noPolity') }}</p>
-      </section>
+        <section class="cards-section">
+          <h3 class="section-title">{{ t('timeline.ruler') }}</h3>
+          <div v-if="activeRulers.length" class="cards-grid">
+            <RulerCard
+              v-for="{ polity, ruler } in activeRulers"
+              :key="ruler.id"
+              :polity="polity"
+              :ruler="ruler"
+              :is-active="true"
+            />
+          </div>
+          <div v-else-if="activePolities.length" class="cards-grid">
+            <RulerCard
+              v-for="polity in activePolities"
+              :key="polity.id"
+              :polity="polity"
+              :is-active="true"
+            />
+          </div>
+          <p v-else class="empty-state">{{ t('timeline.noPolity') }}</p>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -138,27 +118,21 @@ function selectYear(year) {
 
 .header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 2rem 2rem 1rem;
+  padding: 0.85rem 1.5rem;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
 }
 
 .site-title {
   font-family: var(--font-serif);
-  font-size: 2.25rem;
+  font-size: 1.65rem;
   font-weight: 600;
   color: var(--accent);
   margin: 0;
   letter-spacing: 0.02em;
-}
-
-.site-subtitle {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin: 0.25rem 0 0;
 }
 
 .main {
@@ -166,7 +140,7 @@ function selectYear(year) {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.25rem 1.5rem 1.5rem;
 }
 
 .region-header {
@@ -174,13 +148,13 @@ function selectYear(year) {
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
 .region-name {
   font-family: var(--font-serif);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
   color: var(--text);
@@ -194,7 +168,7 @@ function selectYear(year) {
 }
 
 .year-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -203,7 +177,7 @@ function selectYear(year) {
 
 .year-value {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--accent);
 }
@@ -212,61 +186,67 @@ function selectYear(year) {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.25rem 1rem 1rem;
-  margin-bottom: 1.5rem;
+  padding: 1rem 0.85rem;
+  margin-bottom: 1rem;
   overflow-x: auto;
 }
 
-.year-slider {
-  width: 100%;
-  margin-top: 1rem;
-  accent-color: var(--accent);
-  cursor: pointer;
-}
-
-.hint {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin: 0.75rem 0 0;
+.detail-row.parallel {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 1.8fr;
+  gap: 1rem;
+  align-items: start;
 }
 
 .active-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .active-chips {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
 }
 
 .chip {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.65rem;
   border: 1.5px solid;
   border-radius: 999px;
   background: var(--surface);
 }
 
 .section-title {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
 }
 
 .cards-section {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  min-width: 0;
 }
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .detail-row.parallel {
+    grid-template-columns: 1fr;
+  }
+
+  .active-chips {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .empty-state {
@@ -275,7 +255,7 @@ function selectYear(year) {
 }
 
 .footer {
-  padding: 1.25rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-top: 1px solid var(--border);
   font-size: 0.8rem;
   color: var(--text-muted);

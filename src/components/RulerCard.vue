@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { formatYear, localized } from '../utils/timeline'
+import { formatYear, localized, localizedContemporary } from '../utils/timeline'
 
 const props = defineProps({
   polity: { type: Object, required: true },
@@ -30,9 +30,7 @@ const culture = computed(() =>
   props.polity.culture ? localized(props.polity.culture, locale.value) : null
 )
 const contemporary = computed(() =>
-  props.polity.contemporary
-    ? localized(props.polity.contemporary, locale.value)
-    : null
+  localizedContemporary(props.polity.contemporary, locale.value)
 )
 </script>
 
@@ -86,7 +84,7 @@ const contemporary = computed(() =>
 }
 
 .card-body {
-  padding: 1rem 1.15rem;
+  padding: 0.75rem 1rem;
   flex: 1;
 }
 
@@ -101,7 +99,7 @@ const contemporary = computed(() =>
 
 .ruler-name {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text);
   margin: 0 0 0.4rem;
@@ -135,8 +133,8 @@ const contemporary = computed(() =>
 }
 
 .meta-list {
-  margin: 0.75rem 0 0;
-  padding: 0.65rem 0 0;
+  margin: 0.6rem 0 0;
+  padding: 0.5rem 0 0;
   border-top: 1px solid var(--border);
 }
 
