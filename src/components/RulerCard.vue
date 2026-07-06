@@ -20,6 +20,9 @@ const reign = computed(() =>
     ? `${formatYear(props.ruler.start, locale.value)} — ${formatYear(props.ruler.end, locale.value)}`
     : null
 )
+const rulerNote = computed(() =>
+  props.ruler?.note ? localized(props.ruler.note, locale.value) : null
+)
 const contemporary = computed(() =>
   props.polity.contemporary
     ? localized(props.polity.contemporary, locale.value)
@@ -35,6 +38,7 @@ const contemporary = computed(() =>
       <template v-if="ruler">
         <h3 class="ruler-name">{{ rulerName }}</h3>
         <p class="reign">{{ $t('timeline.reign') }}: {{ reign }}</p>
+        <p v-if="rulerNote" class="ruler-note">{{ rulerNote }}</p>
       </template>
       <p v-else class="no-ruler">{{ $t('timeline.noRuler') }}</p>
       <p v-if="contemporary" class="contemporary">
@@ -92,6 +96,13 @@ const contemporary = computed(() =>
   font-size: 0.875rem;
   color: var(--text-muted);
   margin: 0;
+}
+
+.ruler-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0.35rem 0 0;
+  line-height: 1.4;
 }
 
 .no-ruler {

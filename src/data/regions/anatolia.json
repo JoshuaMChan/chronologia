@@ -30,8 +30,8 @@
         }
       ],
       "contemporary": {
-        "en": "Shang dynasty (China)",
-        "ja": "殷（商）王朝",
+        "en": "Shang dynasty",
+        "ja": "商王朝",
         "zh": "商朝"
       }
     },
@@ -45,7 +45,12 @@
         "zh": "弗里吉亚"
       },
       "color": "#b8860b",
-      "rulers": []
+      "rulers": [],
+      "contemporary": {
+        "en": "Western Zhou & Spring and Autumn",
+        "ja": "西周・春秋時代",
+        "zh": "西周、春秋"
+      }
     },
     {
       "id": "lydia",
@@ -57,7 +62,12 @@
         "zh": "吕底亚王国"
       },
       "color": "#c9a227",
-      "rulers": []
+      "rulers": [],
+      "contemporary": {
+        "en": "Spring and Autumn period",
+        "ja": "春秋時代",
+        "zh": "春秋"
+      }
     },
     {
       "id": "achaemenid",
@@ -80,7 +90,12 @@
             "zh": "居鲁士大帝"
           }
         }
-      ]
+      ],
+      "contemporary": {
+        "en": "Spring and Autumn & Warring States",
+        "ja": "春秋戦国時代",
+        "zh": "春秋战国"
+      }
     },
     {
       "id": "macedonian",
@@ -103,7 +118,12 @@
             "zh": "亚历山大大帝"
           }
         }
-      ]
+      ],
+      "contemporary": {
+        "en": "Warring States period",
+        "ja": "戦国時代",
+        "zh": "战国"
+      }
     },
     {
       "id": "seleucid",
@@ -115,7 +135,12 @@
         "zh": "塞琉古帝国"
       },
       "color": "#6b4c8a",
-      "rulers": []
+      "rulers": [],
+      "contemporary": {
+        "en": "Warring States to Western Han",
+        "ja": "戦国時代〜前漢",
+        "zh": "战国至西汉"
+      }
     },
     {
       "id": "pergamon",
@@ -127,7 +152,12 @@
         "zh": "帕加马王国"
       },
       "color": "#9b59b6",
-      "rulers": []
+      "rulers": [],
+      "contemporary": {
+        "en": "Warring States to Western Han",
+        "ja": "戦国時代〜前漢",
+        "zh": "战国至西汉"
+      }
     },
     {
       "id": "pontus",
@@ -150,7 +180,12 @@
             "zh": "米特里达梯六世"
           }
         }
-      ]
+      ],
+      "contemporary": {
+        "en": "Qin & Han dynasties",
+        "ja": "秦・漢",
+        "zh": "秦汉"
+      }
     },
     {
       "id": "rome",
@@ -162,7 +197,43 @@
         "zh": "罗马共和国及帝国"
       },
       "color": "#a83232",
-      "rulers": []
+      "rulers": [
+        {
+          "id": "pompey",
+          "start": -67,
+          "end": -48,
+          "name": {
+            "en": "Pompey the Great",
+            "ja": "ポンペイウス大帝",
+            "zh": "庞培"
+          },
+          "note": {
+            "en": "Ended Mithridatic Wars in Anatolia (66–62 BCE)",
+            "ja": "紀元前66–62年、アナトリアでミトリダテス戦争を終結",
+            "zh": "前66–前62年于小亚细亚终结米特里达梯战争"
+          }
+        },
+        {
+          "id": "caesar",
+          "start": -58,
+          "end": -44,
+          "name": {
+            "en": "Julius Caesar",
+            "ja": "ユリウス・カエサル",
+            "zh": "凯撒"
+          },
+          "note": {
+            "en": "Defeated Pharnaces at Zela in Anatolia (47 BCE)",
+            "ja": "紀元前47年、アナトリア・ゼラでファルナケス2世を破る",
+            "zh": "前47年于小亚细亚泽拉击败法尔纳克斯二世"
+          }
+        }
+      ],
+      "contemporary": {
+        "en": "Han, Wei, Jin & Southern dynasties",
+        "ja": "漢・魏・晋・南朝",
+        "zh": "汉魏晋南北朝"
+      }
     },
     {
       "id": "byzantine",
@@ -185,7 +256,12 @@
             "zh": "查士丁尼大帝"
           }
         }
-      ]
+      ],
+      "contemporary": {
+        "en": "Southern dynasties to Ming",
+        "ja": "南朝〜明",
+        "zh": "南北朝至明"
+      }
     }
   ]
 }
