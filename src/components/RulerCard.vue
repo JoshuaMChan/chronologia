@@ -23,6 +23,12 @@ const reign = computed(() =>
 const rulerNote = computed(() =>
   props.ruler?.note ? localized(props.ruler.note, locale.value) : null
 )
+const ethnicity = computed(() =>
+  props.polity.ethnicity ? localized(props.polity.ethnicity, locale.value) : null
+)
+const culture = computed(() =>
+  props.polity.culture ? localized(props.polity.culture, locale.value) : null
+)
 const contemporary = computed(() =>
   props.polity.contemporary
     ? localized(props.polity.contemporary, locale.value)
@@ -41,10 +47,20 @@ const contemporary = computed(() =>
         <p v-if="rulerNote" class="ruler-note">{{ rulerNote }}</p>
       </template>
       <p v-else class="no-ruler">{{ $t('timeline.noRuler') }}</p>
-      <p v-if="contemporary" class="contemporary">
-        <span class="tag">{{ $t('timeline.contemporary') }}</span>
-        {{ contemporary }}
-      </p>
+      <dl v-if="ethnicity || culture || contemporary" class="meta-list">
+        <div v-if="ethnicity" class="meta-row">
+          <dt>{{ $t('timeline.ethnicity') }}</dt>
+          <dd>{{ ethnicity }}</dd>
+        </div>
+        <div v-if="culture" class="meta-row">
+          <dt>{{ $t('timeline.culture') }}</dt>
+          <dd>{{ culture }}</dd>
+        </div>
+        <div v-if="contemporary" class="meta-row">
+          <dt>{{ $t('timeline.contemporary') }}</dt>
+          <dd>{{ contemporary }}</dd>
+        </div>
+      </dl>
     </div>
   </article>
 </template>

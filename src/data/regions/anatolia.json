@@ -17,6 +17,16 @@
         "zh": "赫梯帝国"
       },
       "color": "#8b4513",
+      "ethnicity": {
+        "en": "Indo-European (Hittites), with Hattian peoples",
+        "ja": "インド・ヨーロッパ系（ヒッタイト人）、ハッティ人",
+        "zh": "印欧人（赫梯人），含哈梯人"
+      },
+      "culture": {
+        "en": "Hittite-Anatolian civilization (cuneiform, chariot states)",
+        "ja": "ヒッタイト＝アナトリア文明（楔形文字・戦車国家）",
+        "zh": "赫梯—安纳托利亚文明（楔形文字、战车国家）"
+      },
       "rulers": [
         {
           "id": "suppiluliuma-i",
@@ -45,11 +55,21 @@
         "zh": "弗里吉亚"
       },
       "color": "#b8860b",
+      "ethnicity": {
+        "en": "Indo-European (Phrygians, Thracian-related)",
+        "ja": "インド・ヨーロッパ系（フリギア人、トラキア系）",
+        "zh": "印欧人（弗里吉亚人，色雷斯系）"
+      },
+      "culture": {
+        "en": "Phrygian civilization of central Anatolia",
+        "ja": "中央アナトリアのフリギア文明",
+        "zh": "小亚细亚中部弗里吉亚文明"
+      },
       "rulers": [],
       "contemporary": {
-        "en": "Western Zhou & Spring and Autumn",
-        "ja": "西周・春秋時代",
-        "zh": "西周、春秋"
+        "en": "Western Zhou",
+        "ja": "西周",
+        "zh": "西周"
       }
     },
     {
@@ -62,6 +82,16 @@
         "zh": "吕底亚王国"
       },
       "color": "#c9a227",
+      "ethnicity": {
+        "en": "Indo-European (Lydians, Anatolian branch)",
+        "ja": "インド・ヨーロッパ系（リディア人、アナトリア系）",
+        "zh": "印欧人（吕底亚人，安纳托利亚支系）"
+      },
+      "culture": {
+        "en": "Lydian kingdom culture (early coinage, Aegean trade)",
+        "ja": "リディア王国文化（初期貨幣・エーゲ海貿易）",
+        "zh": "吕底亚王国文化（早期铸币、爱琴海贸易）"
+      },
       "rulers": [],
       "contemporary": {
         "en": "Spring and Autumn period",
@@ -79,6 +109,16 @@
         "zh": "阿契美尼德波斯帝国"
       },
       "color": "#4a6741",
+      "ethnicity": {
+        "en": "Iranian peoples (Persians)",
+        "ja": "イラン系（ペルシャ人）",
+        "zh": "伊朗人（波斯人）"
+      },
+      "culture": {
+        "en": "Achaemenid Persian imperial civilization",
+        "ja": "アケメネス朝ペルシャ帝国文明",
+        "zh": "阿契美尼德波斯帝国文明"
+      },
       "rulers": [
         {
           "id": "cyrus-the-great",
@@ -92,9 +132,9 @@
         }
       ],
       "contemporary": {
-        "en": "Spring and Autumn & Warring States",
-        "ja": "春秋戦国時代",
-        "zh": "春秋战国"
+        "en": "Warring States",
+        "ja": "戦国時代",
+        "zh": "战国"
       }
     },
     {
@@ -107,6 +147,16 @@
         "zh": "马其顿帝国"
       },
       "color": "#2c5f7c",
+      "ethnicity": {
+        "en": "Macedonians (Greek branch)",
+        "ja": "マケドニア人（ギリシャ系）",
+        "zh": "马其顿人（希腊支系）"
+      },
+      "culture": {
+        "en": "Macedonian-Hellenic imperial culture",
+        "ja": "マケドニア＝ギリシャ帝国文化",
+        "zh": "马其顿—希腊帝国文化"
+      },
       "rulers": [
         {
           "id": "alexander-the-great",
@@ -135,11 +185,21 @@
         "zh": "塞琉古帝国"
       },
       "color": "#6b4c8a",
+      "ethnicity": {
+        "en": "Macedonian-Greek ruling class over diverse peoples",
+        "ja": "マケドニア・ギリシャ支配層（多民族被支配）",
+        "zh": "马其顿—希腊统治阶层（统合多民族）"
+      },
+      "culture": {
+        "en": "Hellenistic (Greek) culture in Anatolia",
+        "ja": "アナトリアのヘレニズム（ギリシャ）文化",
+        "zh": "小亚细亚希腊化（希腊）文化"
+      },
       "rulers": [],
       "contemporary": {
-        "en": "Warring States to Western Han",
-        "ja": "戦国時代〜前漢",
-        "zh": "战国至西汉"
+        "en": "Warring States",
+        "ja": "戦国時代",
+        "zh": "战国"
       }
     },
     {
@@ -152,11 +212,21 @@
         "zh": "帕加马王国"
       },
       "color": "#9b59b6",
+      "ethnicity": {
+        "en": "Attalid dynasty (Macedonian Greek origin)",
+        "ja": "アッタロス朝（マケドニア・ギリシャ系）",
+        "zh": "阿塔罗斯王朝（马其顿希腊裔）"
+      },
+      "culture": {
+        "en": "Hellenistic Greek court culture",
+        "ja": "ヘレニズム期ギリシャ宮廷文化",
+        "zh": "希腊化时期希腊宫廷文化"
+      },
       "rulers": [],
       "contemporary": {
-        "en": "Warring States to Western Han",
-        "ja": "戦国時代〜前漢",
-        "zh": "战国至西汉"
+        "en": "Western Han",
+        "ja": "前漢",
+        "zh": "西汉"
       }
     },
     {
@@ -169,6 +239,16 @@
         "zh": "本都王国"
       },
       "color": "#8b2942",
+      "ethnicity": {
+        "en": "Pontic dynasty (Persian-Anatolian, Hellenized)",
+        "ja": "ポントス王家（ペルシャ＝アナトリア系、ギリシャ化）",
+        "zh": "本都王室（波斯—安纳托利亚裔，希腊化）"
+      },
+      "culture": {
+        "en": "Hellenistic-Persian blended culture",
+        "ja": "ヘレニズムとペルシャの融合文化",
+        "zh": "希腊化—波斯融合文化"
+      },
       "rulers": [
         {
           "id": "mithridates-vi",
@@ -182,9 +262,9 @@
         }
       ],
       "contemporary": {
-        "en": "Qin & Han dynasties",
-        "ja": "秦・漢",
-        "zh": "秦汉"
+        "en": "Western Han",
+        "ja": "前漢",
+        "zh": "西汉"
       }
     },
     {
@@ -197,6 +277,16 @@
         "zh": "罗马共和国及帝国"
       },
       "color": "#a83232",
+      "ethnicity": {
+        "en": "Romans (Italic/Latin peoples)",
+        "ja": "ローマ人（イタリック・ラテン系）",
+        "zh": "罗马人（意大利—拉丁民族）"
+      },
+      "culture": {
+        "en": "Greco-Roman civilization",
+        "ja": "ギリシャ＝ローマ文明",
+        "zh": "希腊—罗马文明"
+      },
       "rulers": [
         {
           "id": "pompey",
@@ -230,9 +320,9 @@
         }
       ],
       "contemporary": {
-        "en": "Han, Wei, Jin & Southern dynasties",
-        "ja": "漢・魏・晋・南朝",
-        "zh": "汉魏晋南北朝"
+        "en": "Eastern Han",
+        "ja": "後漢",
+        "zh": "东汉"
       }
     },
     {
@@ -245,6 +335,16 @@
         "zh": "拜占庭帝国"
       },
       "color": "#7c4a2e",
+      "ethnicity": {
+        "en": "Byzantines (Greek-speaking Romans, multi-ethnic empire)",
+        "ja": "ビザンツ人（ギリシャ語系ローマ市民、多民族帝国）",
+        "zh": "拜占庭人（希腊语罗马公民，多民族帝国）"
+      },
+      "culture": {
+        "en": "Byzantine Orthodox Christian civilization",
+        "ja": "ビザンツ正教キリスト教文明",
+        "zh": "拜占庭东正教基督教文明"
+      },
       "rulers": [
         {
           "id": "justinian",
@@ -258,9 +358,9 @@
         }
       ],
       "contemporary": {
-        "en": "Southern dynasties to Ming",
-        "ja": "南朝〜明",
-        "zh": "南北朝至明"
+        "en": "Song dynasty",
+        "ja": "宋",
+        "zh": "宋朝"
       }
     }
   ]
