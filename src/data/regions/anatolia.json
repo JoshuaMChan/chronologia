@@ -92,7 +92,23 @@
         "ja": "リディア王国文化（初期貨幣・エーゲ海貿易）",
         "zh": "吕底亚王国文化（早期铸币、爱琴海贸易）"
       },
-      "rulers": [],
+      "rulers": [
+        {
+          "id": "croesus",
+          "start": -560,
+          "end": -546,
+          "name": {
+            "en": "Croesus",
+            "ja": "クロイソス",
+            "zh": "克罗伊斯"
+          },
+          "note": {
+            "en": "Last king of Lydia; defeated by Cyrus the Great",
+            "ja": "リディア最後の王。キュロス大王に敗れる",
+            "zh": "吕底亚末代国王，被居鲁士大帝所灭"
+          }
+        }
+      ],
       "contemporary": {
         "en": "Spring and Autumn period",
         "ja": "春秋時代",
@@ -316,6 +332,21 @@
             "en": "Defeated Pharnaces at Zela in Anatolia (47 BCE)",
             "ja": "紀元前47年、アナトリア・ゼラでファルナケス2世を破る",
             "zh": "前47年于小亚细亚泽拉击败法尔纳克斯二世"
+          }
+        },
+        {
+          "id": "constantine",
+          "start": 306,
+          "end": 337,
+          "name": {
+            "en": "Constantine the Great",
+            "ja": "コンスタンティヌス大帝",
+            "zh": "君士坦丁大帝"
+          },
+          "note": {
+            "en": "Founded Constantinople as the new capital (330 CE)",
+            "ja": "330年に新首都コンスタンティノープルを建設",
+            "zh": "330年建君士坦丁堡为新都"
           }
         }
       ],
