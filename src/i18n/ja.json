@@ -15,7 +15,9 @@
     "contemporary": "同時代",
     "reign": "在位",
     "noRuler": "君主データ未登録",
-    "dragHint": "スライダーまたは年表をクリックして探索"
+    "noPolity": "この年に該当する政権なし",
+    "activeAt": "{year} に存在",
+    "dragHint": "スライダーまたはレーンをクリックして探索"
   },
   "legend": {
     "title": "文明一覧"

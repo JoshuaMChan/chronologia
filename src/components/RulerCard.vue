@@ -4,14 +4,14 @@ import { useI18n } from 'vue-i18n'
 import { formatYear, localized } from '../utils/timeline'
 
 const props = defineProps({
-  period: { type: Object, required: true },
+  polity: { type: Object, required: true },
   ruler: { type: Object, default: null },
   isActive: { type: Boolean, default: false },
 })
 
 const { locale } = useI18n()
 
-const periodName = computed(() => localized(props.period.name, locale.value))
+const polityName = computed(() => localized(props.polity.name, locale.value))
 const rulerName = computed(() =>
   props.ruler ? localized(props.ruler.name, locale.value) : null
 )
@@ -21,17 +21,17 @@ const reign = computed(() =>
     : null
 )
 const contemporary = computed(() =>
-  props.period.contemporary
-    ? localized(props.period.contemporary, locale.value)
+  props.polity.contemporary
+    ? localized(props.polity.contemporary, locale.value)
     : null
 )
 </script>
 
 <template>
   <article class="ruler-card" :class="{ active: isActive }">
-    <div class="color-bar" :style="{ background: period.color }" />
+    <div class="color-bar" :style="{ background: polity.color }" />
     <div class="card-body">
-      <p class="period-label">{{ periodName }}</p>
+      <p class="polity-label">{{ polityName }}</p>
       <template v-if="ruler">
         <h3 class="ruler-name">{{ rulerName }}</h3>
         <p class="reign">{{ $t('timeline.reign') }}: {{ reign }}</p>
@@ -70,7 +70,7 @@ const contemporary = computed(() =>
   flex: 1;
 }
 
-.period-label {
+.polity-label {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

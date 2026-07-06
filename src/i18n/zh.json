@@ -15,7 +15,9 @@
     "contemporary": "同期",
     "reign": "在位",
     "noRuler": "暂无君主记录",
-    "dragHint": "拖动滑块或点击时间轴进行探索"
+    "noPolity": "该年份无活跃政权",
+    "activeAt": "{year} 并存政权",
+    "dragHint": "拖动滑块或点击时间轴行进行探索"
   },
   "legend": {
     "title": "文明一览"

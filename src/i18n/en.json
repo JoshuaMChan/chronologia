@@ -15,7 +15,9 @@
     "contemporary": "Contemporary",
     "reign": "Reign",
     "noRuler": "No ruler recorded yet",
-    "dragHint": "Drag the slider or click the timeline to explore"
+    "noPolity": "No polity active at this year",
+    "activeAt": "Active in {year}",
+    "dragHint": "Drag the slider or click a lane to explore"
   },
   "legend": {
     "title": "Civilizations"
