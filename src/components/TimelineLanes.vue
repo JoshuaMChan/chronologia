@@ -41,6 +41,13 @@ function onLaneClick(polity, e) {
   const mid = Math.round((polity.start + polity.end) / 2)
   emit('select-year', mid)
 }
+
+function laneTooltip(polity) {
+  const parts = []
+  if (polity.ethnicity) parts.push(localized(polity.ethnicity, locale.value))
+  if (polity.culture) parts.push(localized(polity.culture, locale.value))
+  return parts.join(' · ')
+}
 </script>
 
 <template>
@@ -84,6 +91,7 @@ function onLaneClick(polity, e) {
           type="button"
           class="label-col lane-label"
           :style="{ borderLeftColor: polity.color }"
+          :title="laneTooltip(polity)"
           @click="onLaneClick(polity, $event)"
         >
           {{ localized(polity.name, locale) }}

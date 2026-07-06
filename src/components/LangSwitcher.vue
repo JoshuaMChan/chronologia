@@ -1,7 +1,8 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { locales } from '../i18n'
+import { locales, LOCALE_COOKIE } from '../i18n'
+import { setCookie } from '../utils/cookie'
 
 const { locale } = useI18n()
 
@@ -11,6 +12,14 @@ const selected = computed({
     locale.value = code
   },
 })
+
+watch(
+  locale,
+  (code) => {
+    setCookie(LOCALE_COOKIE, code)
+  },
+  { immediate: true }
+)
 </script>
 
 <template>

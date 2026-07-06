@@ -134,6 +134,39 @@ const contemporary = computed(() =>
   color: var(--text-muted);
 }
 
+.meta-list {
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0 0;
+  border-top: 1px solid var(--border);
+}
+
+.meta-row {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 0.75rem;
+  margin: 0 0 0.45rem;
+}
+
+.meta-row:last-child {
+  margin-bottom: 0;
+}
+
+.meta-row dt {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin: 0;
+}
+
+.meta-row dd {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
 .tag {
   display: inline-block;
   background: var(--surface-2);
