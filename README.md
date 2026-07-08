@@ -2,6 +2,8 @@
 
 Parallel historical timelines of rulers and civilizations.
 
+Repository: https://github.com/JoshuaMChan/chronologia
+
 ## First region: Anatolia
 
 Interactive timeline covering major civilizations from the Hittite Empire through the Byzantine Empire.
