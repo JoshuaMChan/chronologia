@@ -305,21 +305,6 @@
       },
       "rulers": [
         {
-          "id": "pompey",
-          "start": -67,
-          "end": -48,
-          "name": {
-            "en": "Pompey the Great",
-            "ja": "ポンペイウス大帝",
-            "zh": "庞培"
-          },
-          "note": {
-            "en": "Ended Mithridatic Wars in Anatolia (66–62 BCE)",
-            "ja": "紀元前66–62年、アナトリアでミトリダテス戦争を終結",
-            "zh": "前66–前62年于小亚细亚终结米特里达梯战争"
-          }
-        },
-        {
           "id": "caesar",
           "start": -58,
           "end": -44,
