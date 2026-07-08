@@ -5,7 +5,7 @@
     "ja": "アナトリア",
     "zh": "小亚细亚"
   },
-  "range": { "start": -1800, "end": 1500 },
+  "range": { "start": -1800, "end": 2026 },
   "polities": [
     {
       "id": "hittite",
@@ -497,6 +497,141 @@
           "en": "Song dynasty",
           "ja": "宋",
           "zh": "宋朝"
+        }
+      ]
+    },
+    {
+      "id": "ottoman",
+      "start": 1299,
+      "end": 1922,
+      "name": {
+        "en": "Ottoman Empire",
+        "ja": "オスマン帝国",
+        "zh": "奥斯曼帝国"
+      },
+      "color": "#1a5f4a",
+      "ethnicity": {
+        "en": "Turks (Oghuz Turkic), multi-ethnic empire",
+        "ja": "トルコ系（オグズ・テュルク）、多民族帝国",
+        "zh": "突厥人（乌古斯突厥），多民族帝国"
+      },
+      "writing": {
+        "en": "Ottoman Turkish (Arabic script)",
+        "ja": "オスマン・トルコ語（アラビア文字）",
+        "zh": "奥斯曼土耳其语（阿拉伯字母）"
+      },
+      "culture": {
+        "en": "Ottoman Islamic imperial civilization",
+        "ja": "オスマン・イスラム帝国文明",
+        "zh": "奥斯曼伊斯兰帝国文明"
+      },
+      "religion": {
+        "en": "Sunni Islam",
+        "ja": "スンニ派イスラム教",
+        "zh": "逊尼派伊斯兰教"
+      },
+      "rulers": [
+        {
+          "id": "mehmed-ii",
+          "start": 1451,
+          "end": 1481,
+          "name": {
+            "en": "Mehmed II",
+            "ja": "メフメト2世",
+            "zh": "穆罕默德二世"
+          },
+          "note": {
+            "en": "Conquered Constantinople (1453), ending the Byzantine Empire",
+            "ja": "1453年にコンスタンティノープルを征服し、ビザンツ帝国を滅ぼす",
+            "zh": "1453年攻陷君士坦丁堡，终结拜占庭帝国"
+          }
+        },
+        {
+          "id": "suleiman",
+          "start": 1520,
+          "end": 1566,
+          "name": {
+            "en": "Suleiman the Magnificent",
+            "ja": "スレイマン大帝",
+            "zh": "苏莱曼大帝"
+          },
+          "note": {
+            "en": "Ottoman golden age; known as Kanuni (the Lawgiver)",
+            "ja": "オスマン帝国の全盛期。「立法者」と称される",
+            "zh": "奥斯曼帝国鼎盛期，号称「立法者」"
+          }
+        }
+      ],
+      "contemporary": [
+        {
+          "en": "Ming dynasty",
+          "ja": "明",
+          "zh": "明朝"
+        },
+        {
+          "en": "Qing dynasty",
+          "ja": "清",
+          "zh": "清朝"
+        }
+      ]
+    },
+    {
+      "id": "turkey",
+      "start": 1923,
+      "end": 2026,
+      "name": {
+        "en": "Republic of Turkey",
+        "ja": "トルコ共和国",
+        "zh": "土耳其共和国"
+      },
+      "color": "#c41e3a",
+      "ethnicity": {
+        "en": "Turks",
+        "ja": "トルコ人",
+        "zh": "土耳其人"
+      },
+      "writing": {
+        "en": "Latin alphabet (Turkish)",
+        "ja": "ラテン文字（トルコ語）",
+        "zh": "拉丁字母（土耳其语）"
+      },
+      "culture": {
+        "en": "Modern Turkish republic",
+        "ja": "現代トルコ共和国",
+        "zh": "现代土耳其共和国"
+      },
+      "religion": {
+        "en": "Secular state (Muslim majority)",
+        "ja": "世俗国家（ムスリム多数）",
+        "zh": "世俗国家（穆斯林多数）"
+      },
+      "rulers": [
+        {
+          "id": "ataturk",
+          "start": 1923,
+          "end": 1938,
+          "name": {
+            "en": "Mustafa Kemal Atatürk",
+            "ja": "ムスタファ・ケマル・アタテュルク",
+            "zh": "凯末尔·阿塔图尔克"
+          },
+          "note": {
+            "en": "Founding president; secular reforms and Latinization of Turkish script",
+            "ja": "初代大統領。世俗化改革とトルコ語のラテン文字化",
+            "zh": "开国总统，推动世俗化改革与土耳其文拉丁化"
+          }
+        }
+      ],
+      "contemporary": [
+        {
+          "en": "Republic of China",
+          "ja": "中華民国",
+          "zh": "中华民国"
+        },
+        {
+          "en": "People's Republic of China",
+          "ja": "中華人民共和国",
+          "zh": "中华人民共和国"
         }
       ]
     }
