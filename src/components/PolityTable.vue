@@ -7,6 +7,7 @@ import {
   getPolityRulerAtYear,
   localized,
   localizedContemporary,
+  localizedList,
 } from '../utils/timeline'
 
 const props = defineProps({
@@ -42,7 +43,9 @@ function onPolityClick(polity) {
             <th>{{ t('timeline.period') }}</th>
             <th>{{ t('timeline.ruler') }}</th>
             <th>{{ t('timeline.ethnicity') }}</th>
+            <th>{{ t('timeline.writing') }}</th>
             <th>{{ t('timeline.culture') }}</th>
+            <th>{{ t('timeline.religion') }}</th>
             <th>{{ t('timeline.contemporary') }}</th>
           </tr>
         </thead>
@@ -66,7 +69,9 @@ function onPolityClick(polity) {
               <span v-else class="muted">{{ t('timeline.noRuler') }}</span>
             </td>
             <td>{{ localized(polity.ethnicity, locale) }}</td>
+            <td>{{ localizedList(polity.writing, locale) }}</td>
             <td>{{ localized(polity.culture, locale) }}</td>
+            <td>{{ localizedList(polity.religion, locale) }}</td>
             <td>{{ localizedContemporary(polity.contemporary, locale) }}</td>
           </tr>
         </tbody>

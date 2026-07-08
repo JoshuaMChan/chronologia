@@ -31,12 +31,16 @@ export function localized(obj, locale) {
 }
 
 export function localizedContemporary(contemporary, locale) {
-  if (!contemporary) return null
-  if (Array.isArray(contemporary)) {
+  return localizedList(contemporary, locale)
+}
+
+export function localizedList(items, locale) {
+  if (!items) return null
+  if (Array.isArray(items)) {
     const sep = locale === 'zh' ? '、' : locale === 'ja' ? '・' : ', '
-    return contemporary.map((item) => localized(item, locale)).join(sep)
+    return items.map((item) => localized(item, locale)).join(sep)
   }
-  return localized(contemporary, locale)
+  return localized(items, locale)
 }
 
 export function yearToPercent(year, rangeStart, rangeEnd) {

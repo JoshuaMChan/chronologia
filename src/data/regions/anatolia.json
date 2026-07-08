@@ -22,10 +22,20 @@
         "ja": "インド・ヨーロッパ系（ヒッタイト人）、ハッティ人",
         "zh": "印欧人（赫梯人），含哈梯人"
       },
+      "writing": {
+        "en": "Cuneiform",
+        "ja": "楔形文字",
+        "zh": "楔形文字"
+      },
       "culture": {
         "en": "Hittite-Anatolian civilization (cuneiform, chariot states)",
         "ja": "ヒッタイト＝アナトリア文明（楔形文字・戦車国家）",
         "zh": "赫梯—安纳托利亚文明（楔形文字、战车国家）"
+      },
+      "religion": {
+        "en": "Hittite polytheism",
+        "ja": "ヒッタイト多神教",
+        "zh": "赫梯多神教"
       },
       "rulers": [
         {
@@ -60,10 +70,20 @@
         "ja": "インド・ヨーロッパ系（フリギア人、トラキア系）",
         "zh": "印欧人（弗里吉亚人，色雷斯系）"
       },
+      "writing": {
+        "en": "Phrygian alphabet",
+        "ja": "フリギア文字",
+        "zh": "弗里吉亚字母"
+      },
       "culture": {
         "en": "Phrygian civilization of central Anatolia",
         "ja": "中央アナトリアのフリギア文明",
         "zh": "小亚细亚中部弗里吉亚文明"
+      },
+      "religion": {
+        "en": "Cybele cult",
+        "ja": "キュベレー信仰",
+        "zh": "库伯勒信仰"
       },
       "rulers": [],
       "contemporary": {
@@ -87,10 +107,20 @@
         "ja": "インド・ヨーロッパ系（リディア人、アナトリア系）",
         "zh": "印欧人（吕底亚人，安纳托利亚支系）"
       },
+      "writing": {
+        "en": "Lydian alphabet",
+        "ja": "リディア文字",
+        "zh": "吕底亚字母"
+      },
       "culture": {
         "en": "Lydian kingdom culture (early coinage, Aegean trade)",
         "ja": "リディア王国文化（初期貨幣・エーゲ海貿易）",
         "zh": "吕底亚王国文化（早期铸币、爱琴海贸易）"
+      },
+      "religion": {
+        "en": "Lydian-Greek polytheism",
+        "ja": "リディア・ギリシャ多神教",
+        "zh": "吕底亚—希腊多神教"
       },
       "rulers": [
         {
@@ -130,10 +160,20 @@
         "ja": "イラン系（ペルシャ人）",
         "zh": "伊朗人（波斯人）"
       },
+      "writing": {
+        "en": "Aramaic script",
+        "ja": "アラム文字",
+        "zh": "阿拉米文"
+      },
       "culture": {
         "en": "Achaemenid Persian imperial civilization",
         "ja": "アケメネス朝ペルシャ帝国文明",
         "zh": "阿契美尼德波斯帝国文明"
+      },
+      "religion": {
+        "en": "Zoroastrianism",
+        "ja": "ゾロアスター教",
+        "zh": "琐罗亚斯德教"
       },
       "rulers": [
         {
@@ -168,10 +208,20 @@
         "ja": "マケドニア人（ギリシャ系）",
         "zh": "马其顿人（希腊支系）"
       },
+      "writing": {
+        "en": "Greek alphabet",
+        "ja": "ギリシャ文字",
+        "zh": "希腊字母"
+      },
       "culture": {
         "en": "Macedonian-Hellenic imperial culture",
         "ja": "マケドニア＝ギリシャ帝国文化",
         "zh": "马其顿—希腊帝国文化"
+      },
+      "religion": {
+        "en": "Greek Olympian religion",
+        "ja": "ギリシャオリンポス多神教",
+        "zh": "奥林匹斯多神教"
       },
       "rulers": [
         {
@@ -206,10 +256,20 @@
         "ja": "マケドニア・ギリシャ支配層（多民族被支配）",
         "zh": "马其顿—希腊统治阶层（统合多民族）"
       },
+      "writing": {
+        "en": "Greek alphabet",
+        "ja": "ギリシャ文字",
+        "zh": "希腊字母"
+      },
       "culture": {
         "en": "Hellenistic (Greek) culture in Anatolia",
         "ja": "アナトリアのヘレニズム（ギリシャ）文化",
         "zh": "小亚细亚希腊化（希腊）文化"
+      },
+      "religion": {
+        "en": "Greek polytheism",
+        "ja": "ギリシャ多神教",
+        "zh": "希腊多神教"
       },
       "rulers": [],
       "contemporary": {
@@ -233,10 +293,20 @@
         "ja": "アッタロス朝（マケドニア・ギリシャ系）",
         "zh": "阿塔罗斯王朝（马其顿希腊裔）"
       },
+      "writing": {
+        "en": "Greek alphabet",
+        "ja": "ギリシャ文字",
+        "zh": "希腊字母"
+      },
       "culture": {
         "en": "Hellenistic Greek court culture",
         "ja": "ヘレニズム期ギリシャ宮廷文化",
         "zh": "希腊化时期希腊宫廷文化"
+      },
+      "religion": {
+        "en": "Greek polytheism",
+        "ja": "ギリシャ多神教",
+        "zh": "希腊多神教"
       },
       "rulers": [],
       "contemporary": {
@@ -260,10 +330,20 @@
         "ja": "ポントス王家（ペルシャ＝アナトリア系、ギリシャ化）",
         "zh": "本都王室（波斯—安纳托利亚裔，希腊化）"
       },
+      "writing": {
+        "en": "Greek alphabet",
+        "ja": "ギリシャ文字",
+        "zh": "希腊字母"
+      },
       "culture": {
         "en": "Hellenistic-Persian blended culture",
         "ja": "ヘレニズムとペルシャの融合文化",
         "zh": "希腊化—波斯融合文化"
+      },
+      "religion": {
+        "en": "Greek polytheism",
+        "ja": "ギリシャ多神教",
+        "zh": "希腊多神教"
       },
       "rulers": [
         {
@@ -298,11 +378,35 @@
         "ja": "ローマ人（イタリック・ラテン系）",
         "zh": "罗马人（意大利—拉丁民族）"
       },
+      "writing": [
+        {
+          "en": "Latin alphabet",
+          "ja": "ラテン文字",
+          "zh": "拉丁字母"
+        },
+        {
+          "en": "Greek alphabet",
+          "ja": "ギリシャ文字",
+          "zh": "希腊字母"
+        }
+      ],
       "culture": {
         "en": "Greco-Roman civilization",
         "ja": "ギリシャ＝ローマ文明",
         "zh": "希腊—罗马文明"
       },
+      "religion": [
+        {
+          "en": "Roman polytheism",
+          "ja": "ローマ多神教",
+          "zh": "罗马多神教"
+        },
+        {
+          "en": "Christianity",
+          "ja": "キリスト教",
+          "zh": "基督教"
+        }
+      ],
       "rulers": [
         {
           "id": "caesar",
@@ -356,10 +460,20 @@
         "ja": "ビザンツ人（ギリシャ語系ローマ市民、多民族帝国）",
         "zh": "拜占庭人（希腊语罗马公民，多民族帝国）"
       },
+      "writing": {
+        "en": "Greek alphabet",
+        "ja": "ギリシャ文字",
+        "zh": "希腊字母"
+      },
       "culture": {
         "en": "Byzantine Orthodox Christian civilization",
         "ja": "ビザンツ正教キリスト教文明",
         "zh": "拜占庭东正教基督教文明"
+      },
+      "religion": {
+        "en": "Eastern Orthodoxy",
+        "ja": "正教会",
+        "zh": "东正教"
       },
       "rulers": [
         {
